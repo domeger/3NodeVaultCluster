@@ -1,17 +1,8 @@
 SKIP_SETCAP = true
 disable_mlock = true
 
-listener "tcp" {
-  address       = "192.168.127.254:8200"
-  cluster_address = "192.168.127.254:8201"
-  tls_disable   = "true"
-}
-
 storage "consul" {
-  address = "10.0.0.10:8500"  # Address of Consul cluster
+  address = "192.168.127.254:8500"  # Address of Consul cluster
   path    = "vault/"         # Prefix for Vault data in Consul KV store
 }
 
-ha_storage "consul" {
-  addresses = ["10.0.0.10:8500", "10.0.0.11:8500", "10.0.0.12:8500"]
-}
