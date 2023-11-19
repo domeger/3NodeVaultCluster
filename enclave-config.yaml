@@ -1,3 +1,5 @@
 version: 1.7
+exposedPorts:
+  - 8200
 environment:
   - VAULT_ADDR=127.0.0.1:8200
