@@ -36,4 +36,4 @@ This guide provides troubleshooting steps for common issues encountered in the 3
 - HashiCorp Vault [official documentation](https://www.vaultproject.io/docs)
 
 ## Getting Help
-For further assistance, please reach out to our support team at [support@example.com] or join our community forum.
+For further assistance, please reach out to our support team at [dom.eger@anjuna.io] or join our community forum.
