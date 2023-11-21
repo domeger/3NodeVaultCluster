@@ -16,13 +16,13 @@ sudo usermod -aG docker ec2-user
 
 # Install AWS Nitro Runtime
 echo "Installing AWS Nitro Runtime"
-sudo wget https://api.downloads.anjuna.io/v1/releases/anjuna-nitro-runtime.1.36.0003.tar.gz --header="X-Anjuna-Auth-Token:$API_KEY" -O "/home/ec2-user/anjuna-nitro-runtime.1.36.0003.tar.gz"
+sudo wget https://api.downloads.anjuna.io/v1/releases/anjuna-nitro-runtime.1.36.0003.tar.gz --header="X-Anjuna-Auth-Token:$MY_API_KEY" -O "/home/ec2-user/anjuna-nitro-runtime.1.36.0003.tar.gz"
 sudo mkdir -p /opt/anjuna/nitro
 sudo tar -xzvo -C /opt/anjuna/nitro -f /home/ec2-user/anjuna-nitro-runtime.1.36.0003.tar.gz
 
 # Install AWS Nitro Runtime License
 echo "Installing AWS Nitro Runtime License"
-sudo wget "https://api.downloads.anjuna.io/v1/releases/license/nitro/license.yaml" --header="X-Anjuna-Auth-Token:$API_KEY" -O "/opt/anjuna/license.yaml"
+sudo wget "https://api.downloads.anjuna.io/v1/releases/license/nitro/license.yaml" --header="X-Anjuna-Auth-Token:$MY_API_KEY" -O "/opt/anjuna/license.yaml"
 
 # Install Docker
 echo "Installing Docker"
