@@ -1,6 +1,8 @@
  #!/bin/bash
 set -eo pipefail
 
+MY_API_KEY=$1
+
 # Install AWS Nitro Enclaves CLI and required packages
 sudo amazon-linux-extras install -y aws-nitro-enclaves-cli
 echo "Installing AWS Nitro Dev and OpenSSL Env"
