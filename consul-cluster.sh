@@ -1,7 +1,7 @@
  #!/bin/bash
 set -eo pipefail
 
-MY_API_KEY=$1
+MY_API_KEY=$(cat /home/ec2-user/api_key_file)
 
 # Install AWS Nitro Enclaves CLI and required packages
 sudo amazon-linux-extras install -y aws-nitro-enclaves-cli
